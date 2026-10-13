@@ -1,0 +1,15 @@
+# Référentiel des indicateurs canoniques — domaine pilote : éducation (Togo)
+# À compléter par le Responsable Data à partir des annuaires INSEED.
+indicateurs:
+  - code: EDU_TAUX_ABANDON
+    libelle: Taux d'abandon scolaire
+    synonymes: ["taux de déperdition", "taux de décrochage", "abandon scolaire"]
+    unite: "%"
+    definition: ""
+    niveaux: [primaire, secondaire_1, secondaire_2]
+  - code: EDU_TBS
+    libelle: Taux brut de scolarisation
+    synonymes: ["TBS"]
+    unite: "%"
+    definition: ""
+    niveaux: [primaire, secondaire_1, secondaire_2]

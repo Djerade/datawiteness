@@ -1,0 +1,11 @@
+# Hiérarchie géographique — Togo
+pays:
+  code: TG
+  libelle: Togo
+  regions:
+    - { code: TG-M, libelle: Maritime }
+    - { code: TG-P, libelle: Plateaux }
+    - { code: TG-C, libelle: Centrale }
+    - { code: TG-K, libelle: Kara }
+    - { code: TG-S, libelle: Savanes }
+    # Grand Lomé à préciser selon le découpage des sources

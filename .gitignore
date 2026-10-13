@@ -1,0 +1,28 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+*.egg-info/
+
+# Node
+node_modules/
+dist/
+
+# Env / secrets
+.env
+*.local
+
+# Données (seuls les .gitkeep et référentiels sont versionnés)
+data/raw/*
+data/interim/*
+data/processed/*
+data/corpus/*
+!data/**/.gitkeep
+
+# IDE / OS
+.vscode/
+.idea/
+.DS_Store

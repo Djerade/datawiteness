@@ -1,0 +1,48 @@
+[project]
+name = "datawitness-backend"
+version = "0.1.0"
+description = "DataWitness Africa — API et pipeline de vérification des données publiques"
+requires-python = ">=3.10"
+dependencies = [
+  "fastapi>=0.115",
+  "uvicorn[standard]>=0.30",
+  "pydantic>=2.8",
+  "pydantic-settings>=2.4",
+  "sqlalchemy>=2.0",
+  "alembic>=1.13",
+  "psycopg[binary]>=3.2",
+  "pgvector>=0.3",
+  "python-multipart>=0.0.9",
+  "pyyaml>=6.0",
+]
+
+[project.optional-dependencies]
+# Couche Extraction (PDF, tableaux, OCR, Excel)
+extraction = [
+  "pymupdf>=1.24",
+  "pdfplumber>=0.11",
+  "pandas>=2.2",
+  "openpyxl>=3.1",
+  "pytesseract>=0.3",
+]
+# Couche IA (rapprochement sémantique + explication)
+ai = [
+  "sentence-transformers>=3.0",
+  "anthropic>=0.40",
+  "rapidfuzz>=3.9",
+]
+dev = [
+  "pytest>=8.0",
+  "httpx>=0.27",
+  "ruff>=0.6",
+]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

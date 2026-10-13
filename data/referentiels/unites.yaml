@@ -1,0 +1,6 @@
+unites:
+  - { code: PCT, symboles: ["%", "pour cent", "pourcentage"] }
+  - { code: PERMILLE, symboles: ["‰", "pour mille"], vers: PCT, facteur: 0.1 }
+  - { code: NB, symboles: ["nombre", "effectif"] }
+  - { code: XOF, symboles: ["FCFA", "F CFA", "XOF"] }
+  - { code: XOF_MILLIONS, symboles: ["millions de FCFA"], vers: XOF, facteur: 1000000 }
